@@ -1,4 +1,5 @@
 ---------------- Funnyinator -----------------------
+
 Courtesy of Mr Cowboy Luigi's brain and my programming skills
 
 All the comments on the code are fairly self explanatory
