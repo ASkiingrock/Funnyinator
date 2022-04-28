@@ -13,7 +13,7 @@ ok the code isn't very good but that doesn't matter
 
 If you have multi-line input!
 -----------------------------
-Use the main-multiline-input.py and put the text in alternateInput.txt
+Use the main-multiline-input.py and put the text in alternate_input.txt
 
 Is god dead?
 ------------
