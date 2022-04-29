@@ -34,7 +34,14 @@
         "christ": "pickle rick",
         "people": "mfs",
         "men": "mfs",
-        "father": "daddy"
+        "father": "daddy",
+        "died": "was game-ended",
+        "dead": "back in the lobby",
+        "die": "be game-ended",
+        "kill": "game-end",
+        "killed": "game-ended",
+        "murder": "game-end",
+        "murdered": "game-ended"
     },
     "funny_words": ["morbius", "pickle", "chungus", "wholesome", "troll", "dookey", "rn"]
 }
