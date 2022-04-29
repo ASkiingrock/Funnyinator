@@ -29,13 +29,14 @@
         "friday": "fred friday",
         "saturday": "sauce saturday",
         "sunday": "shitting sunday",
+        "jesus": "pickle rick",
         "died": "was game-ended",
         "dead": "back in the lobby",
         "die": "be game-ended",
         "kill": "game-end",
         "killed": "game-ended",
         "murder": "game-end",
-        "murdered": "game-ended",
+        "murdered": "game-ended"
     },
     "funny_words": ["morbius", "pickle", "chungus", "wholesome", "troll", "dookey", "rn"]
 }
