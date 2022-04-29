@@ -28,7 +28,14 @@
         "thursday": "cocaine thursday",
         "friday": "fred friday",
         "saturday": "sauce saturday",
-        "sunday": "shitting sunday"
+        "sunday": "shitting sunday",
+        "died": "was game-ended",
+        "dead": "back in the lobby",
+        "die": "be game-ended",
+        "kill": "game-end",
+        "killed": "game-ended",
+        "murder": "game-end",
+        "murdered": "game-ended",
     },
     "funny_words": ["morbius", "pickle", "chungus", "wholesome", "troll", "dookey", "rn"]
 }
