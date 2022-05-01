@@ -14,7 +14,8 @@ def funnyinator(input_string):
     for word in words_list:
         # replaced_string = replaced_string.lower().replace(word,words["replacements"][word])  # Replace words in input string
         replaced_string = re.sub(r'\b'+word+r'\b', words["replacements"][word], replaced_string.lower())
-
+        replaced_string = re.sub("[.,?!'\";:-]"+word+r'\b', words["replacements"][word], replaced_string)
+        replaced_string = re.sub(r'/b'+word+"[.,?!'\";:-]", words["replacements"][word], replaced_string)
     re_S = re.compile(r'(\S+)')
     replaced_string = re_S.split(replaced_string) # maintain whitespace characters
 
