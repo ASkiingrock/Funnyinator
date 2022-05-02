@@ -1,6 +1,5 @@
 import json
 import random
-import string
 import re
 
 
@@ -21,7 +20,6 @@ def funnyinator(input_string: str):
         if random.randint(1, 25) == 1 and "\n" not in word:  # Add in random 'funny' word given 1/25 chance
             funny_word = random.choice(words["funny_words"])
             output_string[word_count] += f" {funny_word}"
-            print(output_string)
 
     return " ".join(output_string)
 

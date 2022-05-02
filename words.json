@@ -38,6 +38,7 @@
         "girls": "mfs",
         "boys": "mfs",
         "lads": "mfs",
+        "peoples": "mfs",
         "father": "daddy",
         "died": "was game-ended",
         "dead": "back in the lobby",
@@ -73,7 +74,12 @@
         "sausage": "glizzy",
         "game": "fortnite",
         "video game": "fortnite",
-        "love": "gaming"
+        "love": "gaming",
+        "fat": "chonker",
+        "stinky": "musty",
+        "smelly": "musty",
+        "food": "crack",
+        "lord": "big man upstairs"
     },
     "funny_words": ["morbius", "pickle", "chungus", "wholesome", "troll", "dookey", "rn", "fr", "ong", "diggly", "giggity"]
 }
