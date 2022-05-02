@@ -51,7 +51,7 @@
 - [Usage](#usage)
 - [Contributing](#contributing)
   * [Code of Conduct](#code-of-conduct)
-- [License](#license)
+- [Licence](#licence)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
   
@@ -132,10 +132,10 @@ Contributions are always welcome!
 Please read the [Code of Conduct](https://github.com/ASkiingrock/Funnyinator/blob/master/CODE_OF_CONDUCT.md)
 
 
-<!-- License -->
-## License
+<!-- Licence -->
+## Licence
 
-Distributed under CC BY-SA 4.0.
+Distributed under the GNU Public License
 
 
 <!-- Contact -->
