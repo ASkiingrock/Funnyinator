@@ -13,9 +13,19 @@ def funnyinator(input_string: str):
 
     replaced_string = input_string
     for word in words_list:
-        replaced_string = re.sub(r'\b' + word + r'\b', words["replacements"][word], replaced_string.lower())
-        replaced_string = re.sub("[.,?!'\";:-]" + word + r'\b', words["replacements"][word], replaced_string)
-        replaced_string = re.sub(r'/b' + word + "[.,?!'\";:-]", words["replacements"][word], replaced_string)
+        replaced_string = replaced_string.lower()
+        # replaced_string = re.sub(r'\b' + word + r'\b', words["replacements"][word], replaced_string)
+        # replaced_string = re.sub("[.,?!'\";:-]" + word + r'\b', words["replacements"][word], replaced_string)
+        # replaced_string = re.sub(r'/b' + word + "[.,?!'\";:-]", words["replacements"][word], replaced_string)
+        replaced_string = re.sub(r'(/b|[\.,?!\'";:-])' + word + r'(/b|[\.,?!\'";:-])', words["replacements"][word], replaced_string)
+        # this done gone not work
+        # basically the first regex checks for word boundary, word, then another word boundary
+        # second one checks for punctuation first, then word boundary
+        # third one checks for word boundary first, then punctuation
+        # im trying to combine them all into one, but failing
+        # | is the or symbol i think?
+        # what it does at the moment is just not replace anything
+        # anyway you have a try
     re_S = re.compile(r'(\S+)')
     replaced_string = re_S.split(replaced_string)  # maintain whitespace characters
     for i in range(len(replaced_string) - 1):
