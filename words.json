@@ -67,7 +67,6 @@
         "million": "morbillion",
         "billion": "morbillion",
         "trillion": "morbillion",
-        "bum": "dumpy",
         "hugh": "hugh jass",
         "drinker": "throat goat",
         "alcoholic": "throat goat",
@@ -81,7 +80,13 @@
         "food": "crack",
         "lord": "big man upstairs",
         "dance": "harlem shake",
-        "danced": "harlem shaked"
+        "danced": "harlem shaked",
+        "music": "bangers",
+        "computer": "gaming pc",
+        "pc": "gaming pc",
+        "laptop": "gaming pc",
+        "trick": "troll"
+
     },
     "funny_words": ["morbius", "pickle", "chungus", "wholesome", "troll", "dookey", "rn", "fr", "ong", "diggly", "giggity"]
 }

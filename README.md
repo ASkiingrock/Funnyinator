@@ -6,6 +6,7 @@
   <p>
     Make your sentence funnier than ever
   </p>
+  <i>Another product of Smelk Innovations</i>
 
   
 <!-- Badges -->
@@ -109,6 +110,9 @@ Input your text
 
 Output
 * The text in "text.txt" will now be modified
+
+Discord Bot
+* Enter the bot token and run bot.py to use the dedicated Discord bot
 
 <!-- Contributing -->
 ## Contributing
