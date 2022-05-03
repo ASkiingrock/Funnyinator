@@ -94,16 +94,10 @@ Go to the project directory
   cd funnyinator
 ```
 
-Run the appropriate file, considering your needs
-* "main_func.py" for one-line
-* "main_multiline_input.py" for multiple lines
+Run the funnyinator file
 
 ```
-  python main_func.py
-  
-  OR
-  
-  python main_multiline_input.py
+  python funnyinator.py
 ```
 
 
@@ -111,8 +105,10 @@ Run the appropriate file, considering your needs
 ## Usage
 
 Input your text
-* For one line, simply enter it when queried
-* For multiple lines, enter your input in alternate_input.txt. Your output will appear in alternate_output.txt
+* Input your text in "text.txt"
+
+Output
+* The text in "text.txt" will now be modified
 
 <!-- Contributing -->
 ## Contributing

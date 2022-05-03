@@ -24,6 +24,9 @@ def funnyinator(input_string: str):
     return " ".join(output_string)
 
 
-if __name__ == "__main__":
-    unfunny_input = input("Enter your words:\n")  # Get input
-    print(funnyinator(unfunny_input))  # Print outputted 'funny' string
+with open("text.txt", "r", encoding="utf-8") as f:  # Read alternate input file and load contents
+    alternate_input = f.readlines()
+
+with open("text.txt", "w", encoding="utf-8") as f:  # Write to alternate output file
+    for line in alternate_input:  # Run function for each line
+        f.write(funnyinator(line))
