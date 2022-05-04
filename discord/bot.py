@@ -13,12 +13,32 @@ bot.remove_command('help')
 
 @bot.event
 async def on_message(message):
+    if isinstance(message.channel, nextcord.channel.DMChannel):
+        devs = []
+        with open("DISCORD_IDS", "r") as f:
+            for disc_id in f.readlines():
+                devs.append(bot.get_user(int(disc_id)))
+
+        if message.author not in devs:
+            for dev in devs:
+                await dev.send(f"Hi! I received a message from {message.author.name}:")
+                await dev.send(f"\"{message.content}\"")
+            await message.channel.send("Thank you so much for the message. I've forwarded it to the developers.")
+
     await bot.process_commands(message)
 
 
 @bot.command()
 async def help(ctx):
+    timestamp = datetime.datetime.now().strftime("%H:%M:%S %d/%m")
+
     await ctx.send("This is the correspondent for Smelk Innovations, the company that's real.")
+    embed = nextcord.Embed(colour=nextcord.Colour.yellow())
+    embed.set_author(name="Smelk")
+    embed.add_field(name="*funnyinator", value="Make any message funny in one command")
+    embed.add_field(name="*suggest", value="Send a helpful suggestion to the devs")
+    embed.set_footer(text=timestamp)
+    await ctx.send(embed=embed)
 
 
 @bot.command()
@@ -46,6 +66,20 @@ async def funnyinator(ctx):
             output_string[word_count] += f" {funny_word}"
 
     await ctx.send(" ".join(output_string))
+
+
+@bot.command()
+async def suggest(ctx, *, suggestion):
+    await ctx.send("Your suggestion has be sent out to Smelk Innovations Developers, thank you.")
+
+    devs = []
+    with open("DISCORD_IDS", "r") as f:
+        for disc_id in f.readlines():
+            devs.append(bot.get_user(int(disc_id)))
+
+    for dev in devs:
+        await dev.send(f"Hey there, you've got one suggestion from {ctx.author.name}:")
+        await dev.send(f"\"{suggestion}\"")
 
 
 @bot.event
