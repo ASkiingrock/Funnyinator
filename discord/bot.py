@@ -13,7 +13,7 @@ bot.remove_command('help')
 
 @bot.event
 async def on_message(message):
-    if isinstance(message.channel, nextcord.channel.DMChannel):
+    if isinstance(message.channel, nextcord.channel.DMChannel) and not message.author.bot:
         devs = []
         with open("DISCORD_IDS", "r") as f:
             for disc_id in f.readlines():
