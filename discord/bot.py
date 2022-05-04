@@ -1,3 +1,4 @@
+import datetime
 import nextcord
 import random
 import re
@@ -22,10 +23,13 @@ async def help(ctx):
 
 @bot.command()
 async def funnyinator(ctx):
+    timestamp = datetime.datetime.now().strftime("%H:%M:%S %d/%m")
+    print(f"[{timestamp}] {ctx.author.name} used Funnyinator in #{ctx.channel.name}")
+
     async for message in ctx.channel.history(limit=2):
         input_string = message.content
 
-    with open("../words.json", "r", encoding="utf-8") as input_file:  # Words to be replaced are extracted from JSON file
+    with open("words.json", "r", encoding="utf-8") as input_file:  # Words to be replaced are extracted from JSON file
         words = json.load(input_file)
 
     words_list = words["replacements"].keys()  # The list of words to be replaced
@@ -49,7 +53,7 @@ async def on_ready():
     print("Ready")
     print(f"Running in {len(bot.guilds)} servers:")
     for guild in bot.guilds:
-        print(guild.name)
+        print(f"- {guild.name}")
 
 
 with open("TOKEN", "r") as f:

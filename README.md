@@ -77,7 +77,11 @@ A uniquely versatile tool-set allows for input to be provided in forms of one li
 <!-- Prerequisites -->
 ### Prerequisites
 
-Python 3
+* Python 3
+* The Discord bot requires the requests module to automatically update the words list
+```
+  pip install requests
+```
 
 
 <!-- Run Locally -->
