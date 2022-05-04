@@ -85,8 +85,11 @@
         "computer": "gaming pc",
         "pc": "gaming pc",
         "laptop": "gaming pc",
-        "trick": "troll"
+        "trick": "troll",
+        "smelk technologies": "le smelk innovations",
+        "smelk innovations": "le smelk innovations",
+        "smelk": "le smelk"
 
     },
-    "funny_words": ["morbius", "pickle", "chungus", "wholesome", "troll", "dookey", "rn", "fr", "ong", "diggly", "giggity"]
+    "funny_words": ["morbius", "pickle", "chungus", "wholesome", "troll", "dookey", "rn", "fr", "ong", "diggly", "giggity", "[REDACTED]"]
 }
