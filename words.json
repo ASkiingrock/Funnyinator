@@ -71,7 +71,6 @@
         "drinker": "throat goat",
         "alcoholic": "throat goat",
         "sausage": "glizzy",
-        "game": "fortnite",
         "video game": "fortnite",
         "love": "gaming",
         "fat": "chonker",
@@ -103,8 +102,13 @@
         "mum": "mum (i had sex with)",
         "mom": "mom (i had sex with)",
         "england": "britland",
+        "britain": "britland",
+        "great britain": "britland",
+        "uk": "britland",
+        "united kingdom": "britland",
         "war": "battle royale",
-        "fight": "1v1"
+        "fight": "1v1",
+        "fought": "1v1ed"
         
     },
     "funny_words": ["morbius", "pickle", "chungus", "wholesome", "troll", "dookey", "rn", "fr", "ong", "diggly", "giggity", "[REDACTED]"]
