@@ -1,11 +1,60 @@
-body {
-  background-color: powderblue;
-}
 h1 {
-  color: blue;
-  font: bold 24px sans-serif;
+  color: black;
+  font-family: 'Radio Canada', sans-serif;
 }
-p {
-  color: red;
-  font: bold italic 14px sans-serif;
+p.one {
+  color: black;
+  font-family: 'Radio Canada', sans-serif; 
+}
+hr.one {
+  height: 0.5px;
+  background: grey;
+}
+hr.two {
+  border: none;
+  height: 0.5px;
+  background: grey;
+}
+i {
+  color: rgb(34, 34, 34);
+  font-family: 'Radio Canada', sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 200;
+}
+a:link {
+  color: blue;
+  text-decoration: none;
+  font-family: 'Radio Canada', sans-serif;
+}
+
+/* visited link */
+a:visited {
+  color: purple;
+  text-decoration: none;
+  font-family: 'Radio Canada', sans-serif;
+}
+
+/* mouse over link */
+a:hover {
+  color: tomato;
+  text-decoration: none;
+  font-family: 'Radio Canada', sans-serif;
+} 
+
+/* selected link */
+a:active {
+  color: blue;
+  text-decoration: none;
+  font-family: 'Radio Canada', sans-serif;
+}
+h2 {
+  color: black;
+  font-family: 'Radio Canada', sans-serif;
+  font-weight: 700;
+}
+h3 {
+  color: black;
+  font-family: 'Radio Canada', sans-serif;
+  font-weight: 600;
 }

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">
     <title> Funnyinator </title>
   </head>
@@ -10,114 +13,124 @@
 <div align="center">
 
   <img src="assets/logo.png" alt="logo" width="200" height="auto" />
-  <h1>Funnyinator</h1>
-  
-  <p>
+  <h1>"Funnyinator"</h1>
+  <hr class="one">
+  <p class="one">
     Make your sentence funnier than ever
-  </p>
+  </p class="one">
   <i>Another product of Smelk Innovations</i>
 
   
 <!-- Badges -->
-<p>
-  <a href="https://github.com/ASkiingrock/Funnyinator/graphs/contributors">
+<p class="one">
+  <a href="https://github.com/ASkiingrock/Funnyinator/graphs/contributors" style="text-decoration:none;"> 
     <img src="https://img.shields.io/github/contributors/ASkiingrock/Funnyinator" alt="contributors" />
   </a>
-  <a href="">
+  <a href="https://github.com/ASkiingrock/Funnyinator/graphs/commit-activity" style="text-decoration:none;">
     <img src="https://img.shields.io/github/last-commit/ASkiingrock/Funnyinator" alt="last update" />
   </a>
-  <a href="https://github.com/ASkiingrock/Funnyinator/network/members">
+  <a href="https://github.com/ASkiingrock/Funnyinator/network/members" style="text-decoration:none;">
     <img src="https://img.shields.io/github/forks/ASkiingrock/Funnyinator" alt="forks" />
   </a>
-  <a href="https://github.com/ASkiingrock/Funnyinator/stargazers">
+  <a href="https://github.com/ASkiingrock/Funnyinator/stargazers" style="text-decoration:none;">
     <img src="https://img.shields.io/github/stars/ASkiingrock/Funnyinator" alt="stars" />
   </a>
-  <a href="https://github.com/ASkiingrock/Funnyinator/issues/">
+  <a href="https://github.com/ASkiingrock/Funnyinator/issues/" style="text-decoration:none;">
     <img src="https://img.shields.io/github/issues/ASkiingrock/Funnyinator" alt="open issues" />
   </a>
-  <a href="https://github.com/ASkiingrock/Funnyinator/blob/master/LICENSE">
+  <a href="https://github.com/ASkiingrock/Funnyinator/blob/master/LICENSE" style="text-decoration:none;">
     <img src="https://img.shields.io/github/license/ASkiingrock/Funnyinator.svg" alt="license" />
   </a>
-</p>
+</p class="one">
    
 <h4>
-    <a href="https://github.com/ASkiingrock/Funnyinator/issues/">Report Bug</a>
+    <a href="https://github.com/ASkiingrock/Funnyinator/issues/" style="text-decoration:none;">Report Bug</a>
   <span> · </span>
-    <a href="https://github.com/ASkiingrock/Funnyinator/issues/">Request Feature</a>
+    <a href="https://github.com/ASkiingrock/Funnyinator/issues/" style="text-decoration:none;">Request Feature</a>
   </h4>
 </div>
 
 <br />
 
 <!-- Table of Contents -->
-# Table of Contents
+<h1>Table of Contents</h1>
+<hr class="two">
 
-- [About the Project](#about-the-project)
-  * [Features](#features)
-- [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-  * [Run Locally](#run-locally)
-- [Usage](#usage)
-- [Contributing](#contributing)
-  * [Code of Conduct](#code-of-conduct)
-- [Licence](#licence)
-- [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
+<ul>
+<li><a href="#about">About the Project</a></li>
+  <ul>
+    <li><a href="#features">Features</a></li>
+  </ul>
   
+<li><a href="getting started">Getting Started</a></li>
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#installation">Installtion</a></li>
+    <li><a href="#run locally">Run Locally</a></li>
+  </ul>
+
+<li><a href="#usage">Usage</a></li>
+<li><a href="#contributing">Contributing</a></li>
+  <ul>
+    <li><a href="#code of conduct">Code of Conduct</a></li>
+  </ul>
+<li><a href="#license">License</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#acknowledgements">Acknowledgements</a></li>
+</ul>
 
 <!-- About the Project -->
-## About the Project
+<h2 id="about"> About the Project </h2>
+<hr class="two">
 Simply enter your sentence, and watch it be transformed as every funny-able word becomes hilarious!
 
 A uniquely versatile tool-set allows for input to be provided in forms of one line, two lines, or more!
 
 <!-- Features -->
-### Features
-
+<h3 id="features"> Features </h3>
 - Unfunny to Funny translation
 - Multiple line input
 - Function, to integrate the funnyinator into your own development projects
 
 
 <!-- Getting Started -->
-## Getting Started
-
+<h2 id="getting started"> Getting Started </h2>
+<hr class="two">
 <!-- Prerequisites -->
-### Prerequisites
+<h3 id="prerequisites"> Prerequisites </h3>
 
 * Python 3
 * The Discord bot requires the requests module to automatically update the words list
-```
+<code>
   pip install requests
-```
+</code>
 
 
 <!-- Run Locally -->
-### Run Locally
+<h3 id="run locally"> Run Locally </h3>
 
 Clone the project
 
-```
+<code>
   git clone https://github.com/ASkiingrock/Funnyinator.git
-```
+</code>
 
 Go to the project directory
 
-```
+<code>
   cd funnyinator
-```
+</code>
 
 Run the funnyinator file
 
-```
+<code>
   python funnyinator.py
-```
+</code>
 
 
 <!-- Usage -->
-## Usage
-
+<h2 id="usage"> Usage </h2>
+<hr class="two">
 Input your text
 * Input your text in "text.txt"
 
@@ -128,8 +141,8 @@ Discord Bot
 * Enter the bot token and run bot.py to use the dedicated Discord bot
 
 <!-- Contributing -->
-## Contributing
-
+<h2 id="contributing"> Contributing </h2>
+<hr class="two">
 <a href="https://github.com/ASkiingrock/Funnyinator/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ASkiingrock/Funnyinator" />
 </a>
@@ -140,25 +153,25 @@ Contributions are always welcome!
 
 
 <!-- Code of Conduct -->
-### Code of Conduct
+<h3 id="code of conduct"> Code of Conduct </h3>
 
 Please read the [Code of Conduct](https://github.com/ASkiingrock/Funnyinator/blob/master/CODE_OF_CONDUCT.md)
 
 
 <!-- Licence -->
-## Licence
-
+<h2 id="license"> Licence </h2>
+<hr class="two">
 Distributed under the GNU Public License
 
 
 <!-- Contact -->
-## Contact
-
+<h2 id="contact"> Contact </h2>
+<hr class="two">
 Project Link: [https://github.com/ASkiingrock/Funnyinator](https://github.com/ASkiingrock/Funnyinator)
 
 <!-- Acknowledgments -->
-## Acknowledgements
-
+<h2 id="acknowledgements"> Acknowledgements </h2>
+<hr class="two">
 Thank you to contributors to the project, including the original creators.
 
 
