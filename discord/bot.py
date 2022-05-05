@@ -47,8 +47,12 @@ async def funnyinator(ctx):
     timestamp = datetime.datetime.now().strftime("%H:%M:%S %d/%m")
     print(f"[{timestamp}] {ctx.author.name} used Funnyinator in #{ctx.channel.name}")
 
-    async for message in ctx.channel.history(limit=2):
-        input_string = message.content
+    if ctx.message.reference:
+        referenced_message = await ctx.channel.fetch_message(ctx.message.reference.message_id)
+        input_string = referenced_message.content
+    else:
+        async for message in ctx.channel.history(limit=2):
+            input_string = message.content
 
     with open("words.json", "r", encoding="utf-8") as input_file:  # Words to be replaced are extracted from JSON file
         words = json.load(input_file)
