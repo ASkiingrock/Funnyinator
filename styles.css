@@ -3,7 +3,9 @@ body {
 }
 h1 {
   color: blue;
+  font: bold 24px sans-serif;
 }
 p {
   color: red;
+  font: bold italic 14px sans-serif;
 }
