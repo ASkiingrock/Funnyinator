@@ -1,3 +1,6 @@
+body{
+  background-color: #f3ebdf;
+}
 h1 {
   color: black;
   font-family: 'Radio Canada', sans-serif;
@@ -9,6 +12,7 @@ h1 {
 hr.one {
   height: 0.5px;
   background: grey;
+  width: 277px;
 }
 hr.two {
   border: none;
@@ -86,15 +90,15 @@ span.code {
   
   display: inline;
   padding: .25em 0;
-  background: #f2f2f2;
+  background: #f3dec0;
   color: black;
-  box-shadow: 20vw 0 0 #f2f2f2, -1.6em 0 0 #f2f2f2;
+  box-shadow: 10em 0 5px #f3dec0, -1.6em 0 5px #f3dec0;
 
 }
 span.codeN {
   display: inline;
   padding: .25em 0;
-  background: #f2f2f2;
+  background: #f3dec0;
   color: black;
-  box-shadow: 10vw 0 0 #f2f2f2, -0.5em 0 0 #f2f2f2;
+  box-shadow: 8em 0 5px #f3dec0, -0.5em 0 5px #f3dec0;
 }
