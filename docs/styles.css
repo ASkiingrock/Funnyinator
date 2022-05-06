@@ -1,5 +1,5 @@
 body{
-  background-color: #f3ebdf;
+  background-color: #f9f6f2;
 }
 h1 {
   color: black;
@@ -90,15 +90,15 @@ span.code {
   
   display: inline;
   padding: .25em 0;
-  background: #f3dec0;
+  background: #f1e2cc;
   color: black;
-  box-shadow: 10em 0 5px #f3dec0, -1.6em 0 5px #f3dec0;
+  box-shadow: 10em 0 5px #f1e2cc, -1.6em 0 5px #f1e2cc;
 
 }
 span.codeN {
   display: inline;
   padding: .25em 0;
-  background: #f3dec0;
+  background: #f1e2cc;
   color: black;
-  box-shadow: 8em 0 5px #f3dec0, -0.5em 0 5px #f3dec0;
+  box-shadow: 8em 0 5px #f1e2cc, -0.5em 0 5px #f1e2cc;
 }
