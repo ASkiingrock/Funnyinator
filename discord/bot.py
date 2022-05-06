@@ -3,6 +3,7 @@ import nextcord
 import random
 import re
 import json
+import wordfile_downloader
 from nextcord.ext import commands
 
 intents = nextcord.Intents.all()
@@ -46,8 +47,12 @@ async def funnyinator(ctx):
     timestamp = datetime.datetime.now().strftime("%H:%M:%S %d/%m")
     print(f"[{timestamp}] {ctx.author.name} used Funnyinator in #{ctx.channel.name}")
 
-    async for message in ctx.channel.history(limit=2):
-        input_string = message.content
+    if ctx.message.reference:
+        referenced_message = await ctx.channel.fetch_message(ctx.message.reference.message_id)
+        input_string = referenced_message.content
+    else:
+        async for message in ctx.channel.history(limit=2):
+            input_string = message.content
 
     with open("words.json", "r", encoding="utf-8") as input_file:  # Words to be replaced are extracted from JSON file
         words = json.load(input_file)
@@ -64,8 +69,14 @@ async def funnyinator(ctx):
         if random.randint(1, 25) == 1 and "\n" not in word:  # Add in random 'funny' word given 1/25 chance
             funny_word = random.choice(words["funny_words"])
             output_string[word_count] += f" {funny_word}"
-
-    await ctx.send(" ".join(output_string))
+    try:
+        await ctx.send(" ".join(output_string))
+    except nextcord.errors.HTTPException:
+        # Split between messages when too long
+        output_string_a = output_string[:len(output_string)//2]
+        output_string_b = output_string[len(output_string)//2:]
+        await ctx.send(" ".join(output_string_a))
+        await ctx.send(" ".join(output_string_b))
 
 
 @bot.command()
@@ -80,6 +91,18 @@ async def suggest(ctx, *, suggestion):
     for dev in devs:
         await dev.send(f"Hey there, you've got one suggestion from {ctx.author.name}:")
         await dev.send(f"\"{suggestion}\"")
+
+
+@bot.command()
+async def redownload(ctx):
+    devs = []
+    with open("DISCORD_IDS", "r") as f:
+        for disc_id in f.readlines():
+            devs.append(bot.get_user(int(disc_id)))
+
+    if ctx.author in devs:
+        await ctx.author.send("Redownloading files")
+        wordfile_downloader.download()
 
 
 @bot.event
