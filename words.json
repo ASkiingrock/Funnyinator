@@ -1,5 +1,8 @@
 {
     "replacements": {
+        "mourning":"malding",
+        "mad":"malding",
+        "angry":"malding",
         "cool": "swag",
         "awesome": "dank",
         "coolest": "dankest",
